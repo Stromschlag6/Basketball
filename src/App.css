@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.team {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.score {
+  font-size: 2rem;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.progress-bar {
+  width: 100px; /* Breite der Fortschrittsleiste anpassen */
+  height: 10px; /* Höhe der Fortschrittsleiste anpassen */
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50; /* Hintergrundfarbe der Fortschrittsleiste anpassen */
+  border-radius: 5px;
+}
+
+.game-log {
+  flex-grow: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 0 20px;
+  overflow-y: auto;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column-reverse; /* Umkehren der Reihenfolge */
+}
+
+.game-log p {
+  margin: 5px 0; /* Etwas Abstand zwischen den Ereignissen hinzufügen */
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.winner-message {
+  position: absolute; /* Position absolut setzen */
+  top: 50%; /* Von oben 50% entfernt */
+  left: 50%; /* Von links 50% entfernt */
+  transform: translate(-50%, -50%); /* Zentrierung relativ zum Container */
+  background-color: #ffcc00; /* Hintergrundfarbe festlegen */
+  padding: 10px; /* Innenabstand festlegen */
+  border-radius: 5px; /* Abrundungsradius festlegen */
 }
