@@ -1,3 +1,10 @@
+# Basketball game
+
+This project is a little game made in school to get fimiliar with javascript.
+Start with giving you and your opponent the name you want and then
+you can start throwing one by one.
+Have fun!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
